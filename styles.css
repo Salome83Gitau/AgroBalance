@@ -148,3 +148,53 @@ footer {
 .social-media a i {
     font-size: 18px;
 }
+
+
+.feature-item {
+    width: 23%; /* Adjust width based on design */
+    margin: 10px 0;
+    transition: transform 0.3s, box-shadow 0.3s; /* Added transition for hover effect */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    background-color: white; /* Background color for feature items */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.testimonial-item {
+    margin: 0 15px;
+    text-align: center;
+    transition: transform 0.3s; /* Added transition for hover effect */
+}
+
+.testimonial-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Add AOS effects to different sections */
+.features h2 {
+    margin-bottom: 30px;
+    animation: fade-in 0.5s ease-in; /* AOS effect for Features title */
+}
+
+.testimonials h2 {
+    margin-bottom: 30px;
+    animation: fade-in 0.5s ease-in; /* AOS effect for Testimonials title */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
