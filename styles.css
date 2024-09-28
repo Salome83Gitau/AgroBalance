@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+header {
+    background-color: #508D4E; /* Color Hunt green */
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.cta button {
+    background-color: #D6EFD8; /* Color Hunt light green */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.signup-btn {
+    background-color: #508D4E;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Features Section */
+#features {
+    text-align: center;
+    padding: 50px 0;
+    background-color: white;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature-item {
+    width: 200px;
+}
+
+.feature-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #A5319D; /* Color Hunt purple */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.testimonial {
+    width: 300px;
+}
+
+/* Footer */
+footer {
+    background-color: #508D4E;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Dashboard */
+.dashboard {
+    padding: 50px;
+    background-color: #D6EFD8;
+}
+
+.dashboard .overview, .suggestions, .alerts, .sustainability-score {
+    margin-bottom: 30px;
+}
+
+.dashboard .btn {
+    background-color: #508D4E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 70%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
