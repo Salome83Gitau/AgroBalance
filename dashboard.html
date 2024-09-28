@@ -3,78 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroBalance | Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>AgroBalance - Farmer Dashboard</title>
 </head>
 <body>
-    <!-- Header -->
-    <header data-aos="fade-down">
+    <header>
         <div class="logo">AgroBalance</div>
         <nav>
             <ul>
                 <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="crop-recommendations.html">Crop Recommendations</a></li>
+                <li><a href="recommendations.html">Crop Recommendations</a></li>
                 <li><a href="monitoring.html">Monitoring</a></li>
-                <li><a href="blockchain.html">Blockchain</a></li>
+                <li><a href="traceability.html">Blockchain</a></li>
                 <li><a href="sustainability.html">Sustainability</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><a href="logout.html">Logout</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Dashboard -->
-    <section class="dashboard" data-aos="fade-up">
-        <h2>Welcome, Farmer!</h2>
-        <div class="overview" data-aos="zoom-in">
-            <h3>Farm Overview</h3>
-            <p>Location: Nairobi, Kenya</p>
-            <p>Land Size: 5 acres</p>
-            <p>Soil Type: Loamy</p>
-            <p>Current Crops: Maize, Beans</p>
-            <button class="btn">Add Land</button>
-            <button class="btn">Edit Farm</button>
-        </div>
-        <div class="suggestions" data-aos="fade-up">
-            <h3>Current Crop Suggestions</h3>
-            <ul>
-                <li>Crop: Tomatoes - Expected Yield: 500kg</li>
-                <li>Crop: Peppers - Expected Yield: 300kg</li>
-            </ul>
-            <button class="btn" id="suggestionsPopupBtn">Request Alternative Suggestions</button>
-        </div>
-        <div class="alerts" data-aos="fade-left">
-            <h3>Overproduction Alerts</h3>
-            <p>Maize production approaching overproduction in your region!</p>
-        </div>
-        <div class="sustainability-score" data-aos="zoom-in">
-            <h3>Your Sustainability Score</h3>
-            <div class="score-chart">[Chart Placeholder]</div>
-            <button class="btn" id="sustainabilityPopupBtn">How to Improve</button>
-        </div>
-    </section>
-
-    <!-- Popups -->
-    <div id="suggestionsPopup" class="modal">
-        <div class="modal-content" data-aos="zoom-in">
-            <span class="close">&times;</span>
-            <h2>Alternative Crop Suggestions</h2>
-            <p>We recommend growing potatoes or onions based on market conditions in your area.</p>
-        </div>
+    <div class="farm-overview">
+        <h2>Your Farm Overview</h2>
+        <p>Location: Your farm location</p>
+        <p>Soil Type: Loamy</p>
+        <p>Land Size: 10 acres</p>
+        <button class="edit-farm">Edit Farm</button>
     </div>
 
-    <div id="sustainabilityPopup" class="modal">
-        <div class="modal-content" data-aos="zoom-in">
-            <span class="close">&times;</span>
-            <h2>Improve Sustainability</h2>
-            <p>Use organic fertilizers and employ crop rotation to boost sustainability scores.</p>
-        </div>
+    <div class="current-crops">
+        <h3>Current Crop Suggestions</h3>
+        <!-- Dynamic suggestions will go here -->
     </div>
 
-    <script src="assets/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <footer>
+        <p>&copy; 2024 AgroBalance</p>
+    </footer>
 </body>
 </html>

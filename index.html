@@ -3,99 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroBalance | Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>AgroBalance - Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
 </head>
 <body>
-    <!-- Header -->
-    <header data-aos="fade-down">
+    <header>
         <div class="logo">AgroBalance</div>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#features">Features</a></li>
+                <li><a href="recommendations.html">Features</a></li>
                 <li><a href="login.html">Login</a></li>
                 <li><a href="signup.html">Signup</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="cta">
-            <button id="joinPopupBtn">Join the Future of Sustainable Farming</button>
-        </div>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero" style="background-image: url('assets/images/farm-background.jpg');" data-aos="zoom-in">
+    
+    <section class="hero aos-init aos-animate" data-aos="fade-up">
         <h1>Prevent Overproduction, Increase Profits, Save the Planet</h1>
-        <p>Join a network of farmers working together for a sustainable agricultural future.</p>
-        <a href="signup.html" class="signup-btn" data-aos="fade-up">Sign Up Now</a>
+        <p>Join a network of farmers working together for a sustainable future.</p>
+        <button class="signup-btn" onclick="window.location.href='signup.html'">Sign Up</button>
     </section>
 
-    <!-- Features Section -->
-    <section id="features">
-        <h2 data-aos="fade-up">Core Features</h2>
-        <div class="feature-grid">
-            <div class="feature-item" data-aos="fade-right">
-                <img src="assets/images/smart-crop.png" alt="Smart Crop Suggestions">
-                <h3>Smart Crop Suggestions</h3>
-                <p>AI-powered crop suggestions based on your region.</p>
-            </div>
-            <div class="feature-item" data-aos="fade-up">
-                <img src="assets/images/climate.png" alt="Climate-Based Recommendations">
-                <h3>Climate-Based Recommendations</h3>
-                <p>Get recommendations that fit your region’s climate.</p>
-            </div>
-            <div class="feature-item" data-aos="fade-left">
-                <img src="assets/images/market.png" alt="Market Monitoring">
-                <h3>Real-Time Market Monitoring</h3>
-                <p>Track crop demand and prices.</p>
-            </div>
-            <div class="feature-item" data-aos="fade-up">
-                <img src="assets/images/sustainability.png" alt="Sustainability Score">
-                <h3>Sustainability Score</h3>
-                <p>Monitor and improve your sustainable farming practices.</p>
-            </div>
+    <section class="features" id="features">
+        <h2>Core Features</h2>
+        <div class="feature">
+            <h3>Smart Crop Suggestions</h3>
+            <p>AI-based recommendations to optimize your yield.</p>
+        </div>
+        <div class="feature">
+            <h3>Climate-Based Recommendations</h3>
+            <p>Customized suggestions based on your local climate.</p>
+        </div>
+        <div class="feature">
+            <h3>Real-Time Market Monitoring</h3>
+            <p>Stay updated with market trends and prices.</p>
+        </div>
+        <div class="feature">
+            <h3>Sustainability Score</h3>
+            <p>Track your eco-friendly practices and get rewarded.</p>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" data-aos="fade-up">
-        <h2>What Farmers Say</h2>
-        <div class="testimonials">
-            <div class="testimonial" data-aos="zoom-in">
-                <img src="assets/images/farmer1.jpg" alt="Farmer Testimonial">
-                <p>"AgroBalance has revolutionized how I plan my crops!" - Farmer John</p>
-            </div>
-            <div class="testimonial" data-aos="zoom-in">
-                <img src="assets/images/farmer2.jpg" alt="Farmer Testimonial">
-                <p>"Thanks to their recommendations, I’ve seen a 20% increase in profits." - Farmer Amina</p>
-            </div>
+    <section class="testimonials">
+        <h2>Success Stories</h2>
+        <div class="testimonial">
+            <p>"AgroBalance transformed my farming!" - Farmer A</p>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <div class="footer-links">
-            <a href="about.html" data-aos="fade-up">About Us</a>
-            <a href="faq.html" data-aos="fade-up">FAQ</a>
-            <a href="terms.html" data-aos="fade-up">Terms of Service</a>
-            <a href="#" data-aos="fade-up">Follow Us on Social Media</a>
-        </div>
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
     </footer>
 
-    <!-- Popup Modal -->
-    <div id="popupModal" class="modal">
-        <div class="modal-content" data-aos="zoom-in">
-            <span class="close">&times;</span>
-            <h2>Join AgroBalance</h2>
-            <p>Become part of a farming community that embraces sustainability and profitability.</p>
-            <a href="signup.html" class="btn">Sign Up Now</a>
-        </div>
-    </div>
-
-    <script src="assets/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>
         AOS.init();
     </script>
